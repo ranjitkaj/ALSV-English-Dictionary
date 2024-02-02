@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="icon" href="static/img/icon.ico.jpg">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Dictinoary</title>
+  <link rel="stylesheet" href="static/style.css/main.css">
+  <script src="static/script.js/script.js"></script>
+</head>
+
+<body id="index">
+
+
+  <div class="nav">
+    <ul>
+      <li><img src="static/img/logo 3.jpg" alt="dictionray" width="60px" style="border-radius: 50%;"></li>
+      <li>
+        <h2><a href="index.html" id="head1">English Dictionary</a></h2>
+      </li>
+      <li style="float:right"><a href="about.html" class="li">About</a></li>
+      <li style="float:right"><a href="contact.html" class="li">contact us</a></li>
+
+    </ul>
+  </div>
+  <div class="container">
+    <h1>English Dictionary</h1>
+    <input type="text" id="searchInput" placeholder="Enter a word">
+    <br><br>
+    <div>
+      <button onclick="searchDictionary()" id="search">Search</button><br><br>
+    </div>
+    <div id="google_translate_element"></div>
+    <div id="definition"></div>
+  </div>
+  <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en' },
+        'google_translate_element'
+      );
+    }
+  </script>
+
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+    </script>
+</body>
+
+</html>
